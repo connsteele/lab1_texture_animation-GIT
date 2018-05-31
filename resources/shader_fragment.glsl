@@ -22,8 +22,8 @@ vec3 ld = normalize(vertex_pos - lp);
 float diffuse = dot(n,ld);
 
 //vec4 tcol = texture(tex, vertex_tex / 5 ); //old
-vec4 tcol = texture(tex, vec2((vertex_tex.x / 5) + offset1.x, (vertex_tex.y / 4) + offset1.y ) ); //need a tcol2, then interpolate btwn these two
-vec4 tcol2 = texture(tex, vec2((vertex_tex.x / 5) + offset2.x, (vertex_tex.y / 4) + offset2.y ) );
+vec4 tcol = texture(tex, vec2((vertex_tex.x / 5) + offset1.x, (vertex_tex.y / 7) + offset1.y ) ); //need a tcol2, then interpolate btwn these two
+vec4 tcol2 = texture(tex, vec2((vertex_tex.x / 5) + offset2.x, (vertex_tex.y / 7) + offset2.y ) );
 //color = tcol;
 color = tcol2 * t + tcol * (1 - t); // or flip tcols
 

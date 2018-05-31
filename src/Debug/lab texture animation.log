@@ -1,1 +1,15 @@
-﻿  lab texture animation.vcxproj -> C:\Users\gosus\Desktop\School\_CSC474\_Labs\lab texture animation\Debug\lab texture animation.exe
+﻿  main.cpp
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(53): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(57): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(61): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(63): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(349): warning C4305: '=': truncation from 'double' to 'float'
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(360): warning C4305: 'return': truncation from 'double' to 'float'
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(398): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(428): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(431): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(452): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(453): warning C4305: 'initializing': truncation from 'double' to 'float'
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(501): warning C4305: '+=': truncation from 'double' to 'float'
+g:\libraries\myprograms\csc474_finalproject\modified-lab1-animated-texture\lab1_texture_animation-git\src\main.cpp(505): warning C4305: '+=': truncation from 'double' to 'float'
+  lab texture animation.vcxproj -> G:\Libraries\MyPrograms\CSC474_FinalProject\Modified-Lab1-animated-texture\lab1_texture_animation-GIT\Debug\lab texture animation.exe

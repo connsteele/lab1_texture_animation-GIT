@@ -259,7 +259,8 @@ public:
 		char filepath[1000];
 
 		//texture 1
-		string str = resourceDirectory + "/bird.png"; // changed from explosion.jpg
+		//string str = resourceDirectory + "/bird.png"; // changed from explosion.jpg
+		string str = resourceDirectory + "/swordMaster-spritesheet.png";
 		strcpy(filepath, str.c_str());
 		unsigned char* data = stbi_load(filepath, &width, &height, &channels, 4);
 		glGenTextures(1, &Texture);
@@ -447,27 +448,29 @@ public:
 
 
 		//send the offset uniforms to the shaders and update animation
-		t += 0.1; //was 0.05
+		t += 0.25; //was 0.1
+		float updateX = 1. / 5.;
+		float updateY = 1. / 7.;
 		if (t >= 1)
 		{
 			t = 0; //reset t
 			//update the 2nd offset
-			offset1.x += .20;
+			offset1.x += updateX;
 			if (offset1.x >= 1.00)
 			{
 				offset1.x = 0;
-				offset1.y += .25;
+				offset1.y += updateY;
 				if (offset1.y >= 1.00)
 				{
 					offset1.y = 0;
 				}
 			}
 			//update the 2nd offset
-			offset2.x += .20;
+			offset2.x += updateX;
 			if (offset2.x >= 1.00)
 			{
 				offset2.x = 0;
-				offset2.y += .25;
+				offset2.y += updateY;
 				if (offset2.y >= 1.00)
 				{
 					offset2.y = 0;
@@ -502,8 +505,8 @@ public:
 		incy += 0.1;
 		glm::mat4 TransY = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, sin(incy)/ 2, 0.0f));
 
-		M = TransX * TransY * TransZ * S* Vi;
-		
+		//M = TransX * TransY * TransZ * S* Vi; //sprite rotates around
+		M = S* Vi; //sprite stays in place
 
 		glUniformMatrix4fv(prog->getUniform("M"), 1, GL_FALSE, &M[0][0]);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (void*)0);

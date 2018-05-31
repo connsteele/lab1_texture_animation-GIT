@@ -1,6 +1,12 @@
 Lab 3 - Hello Triangle and Installing prerequisite software
 ========================================
 
+----------------------------------------
+
+If there are GLFW build errors with Windows install GLFW using NuGet package manager under tools
+
+----------------------------------------
+
 Lab machines
 ------------
 
